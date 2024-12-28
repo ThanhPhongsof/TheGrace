@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "3AniSV26WRo4w32r8xTu2tMihZWu7t0fN0DcTCS0aXk=",
+  "Source": "TheGrace.API",
+  "BasePath": "_content/TheGrace.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.API", "TheGrace.API\TheGrace.API.csproj", "{6557F3FF-24EC-4098-923A-89BE4A5AC705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Application", "TheGrace.Application\TheGrace.Application.csproj", "{96F5F86E-122D-429C-A05F-283E9BFE7745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Persistence", "TheGrace.Persistence\TheGrace.Persistence.csproj", "{94A28CEC-55D7-41EB-824C-8D55397D9671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Domain", "TheGrace.Domain\TheGrace.Domain.csproj", "{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{E93BDE7F-52E6-4B29-A1F8-926940B71A02}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Github\Smith.MySymptomsServer\.editorconfig = ..\..\Github\Smith.MySymptomsServer\.editorconfig
+		..\..\Github\Smith.MySymptomsServer\.gitignore = ..\..\Github\Smith.MySymptomsServer\.gitignore
+		..\..\Github\Smith.MySymptomsServer\Directory.Build.props = ..\..\Github\Smith.MySymptomsServer\Directory.Build.props
+		..\..\Github\Smith.MySymptomsServer\README.md = ..\..\Github\Smith.MySymptomsServer\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6557F3FF-24EC-4098-923A-89BE4A5AC705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6557F3FF-24EC-4098-923A-89BE4A5AC705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6557F3FF-24EC-4098-923A-89BE4A5AC705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6557F3FF-24EC-4098-923A-89BE4A5AC705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F5F86E-122D-429C-A05F-283E9BFE7745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F5F86E-122D-429C-A05F-283E9BFE7745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F5F86E-122D-429C-A05F-283E9BFE7745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F5F86E-122D-429C-A05F-283E9BFE7745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A28CEC-55D7-41EB-824C-8D55397D9671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A28CEC-55D7-41EB-824C-8D55397D9671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A28CEC-55D7-41EB-824C-8D55397D9671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A28CEC-55D7-41EB-824C-8D55397D9671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

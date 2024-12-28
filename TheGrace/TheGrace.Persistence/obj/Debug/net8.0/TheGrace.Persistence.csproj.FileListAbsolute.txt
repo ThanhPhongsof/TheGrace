@@ -1,0 +1,16 @@
+D:\TheGrace\TheGrace\TheGrace.Persistence\bin\Debug\net8.0\TheGrace.Persistence.deps.json
+D:\TheGrace\TheGrace\TheGrace.Persistence\bin\Debug\net8.0\TheGrace.Persistence.dll
+D:\TheGrace\TheGrace\TheGrace.Persistence\bin\Debug\net8.0\TheGrace.Persistence.pdb
+D:\TheGrace\TheGrace\TheGrace.Persistence\bin\Debug\net8.0\TheGrace.Domain.dll
+D:\TheGrace\TheGrace\TheGrace.Persistence\bin\Debug\net8.0\TheGrace.Domain.pdb
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.csproj.AssemblyReference.cache
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.AssemblyInfoInputs.cache
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.AssemblyInfo.cs
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.csproj.CoreCompileInputs.cache
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.sourcelink.json
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.A90E161C.Up2Date
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.dll
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\refint\TheGrace.Persistence.dll
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\TheGrace.Persistence.pdb
+D:\TheGrace\TheGrace\TheGrace.Persistence\obj\Debug\net8.0\ref\TheGrace.Persistence.dll

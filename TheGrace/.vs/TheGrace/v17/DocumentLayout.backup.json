@@ -1,0 +1,365 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TheGrace\\TheGrace\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\services\\productcategory\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\services\\productcategory\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94A28CEC-55D7-41EB-824C-8D55397D9671}|TheGrace.Persistence\\TheGrace.Persistence.csproj|d:\\thegrace\\thegrace\\thegrace.persistence\\efunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94A28CEC-55D7-41EB-824C-8D55397D9671}|TheGrace.Persistence\\TheGrace.Persistence.csproj|solutionrelative:thegrace.persistence\\efunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94A28CEC-55D7-41EB-824C-8D55397D9671}|TheGrace.Persistence\\TheGrace.Persistence.csproj|d:\\thegrace\\thegrace\\thegrace.persistence\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94A28CEC-55D7-41EB-824C-8D55397D9671}|TheGrace.Persistence\\TheGrace.Persistence.csproj|solutionrelative:thegrace.persistence\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|d:\\thegrace\\thegrace\\thegrace.domain\\abstractions\\repositories\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|solutionrelative:thegrace.domain\\abstractions\\repositories\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|d:\\thegrace\\thegrace\\thegrace.domain\\entities\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|solutionrelative:thegrace.domain\\entities\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|d:\\thegrace\\thegrace\\thegrace.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|solutionrelative:thegrace.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6557F3FF-24EC-4098-923A-89BE4A5AC705}|TheGrace.API\\TheGrace.API.csproj|d:\\thegrace\\thegrace\\thegrace.api\\controllers\\v1\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6557F3FF-24EC-4098-923A-89BE4A5AC705}|TheGrace.API\\TheGrace.API.csproj|solutionrelative:thegrace.api\\controllers\\v1\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|d:\\thegrace\\thegrace\\thegrace.domain\\entities\\builder\\productbuilderpattern\\productbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|solutionrelative:thegrace.domain\\entities\\builder\\productbuilderpattern\\productbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\services\\productcategory\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\services\\productcategory\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\services\\product\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\services\\product\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\abstractions\\shared\\ivalidationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\abstractions\\shared\\ivalidationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|d:\\thegrace\\thegrace\\thegrace.domain\\entities\\builder\\productcategorybuilderpattern\\productcategorybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|solutionrelative:thegrace.domain\\entities\\builder\\productcategorybuilderpattern\\productcategorybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\dependencyinjection\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\dependencyinjection\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6557F3FF-24EC-4098-923A-89BE4A5AC705}|TheGrace.API\\TheGrace.API.csproj|d:\\thegrace\\thegrace\\thegrace.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6557F3FF-24EC-4098-923A-89BE4A5AC705}|TheGrace.API\\TheGrace.API.csproj|solutionrelative:thegrace.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\abstractions\\shared\\validationresultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\abstractions\\shared\\validationresultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\abstractions\\shared\\validationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\abstractions\\shared\\validationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\abstractions\\shared\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\abstractions\\shared\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\abstractions\\shared\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\abstractions\\shared\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|d:\\thegrace\\thegrace\\thegrace.application\\abstractions\\shared\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96F5F86E-122D-429C-A05F-283E9BFE7745}|TheGrace.Application\\TheGrace.Application.csproj|solutionrelative:thegrace.application\\abstractions\\shared\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|d:\\thegrace\\thegrace\\thegrace.domain\\entities\\builder\\productcategorybuilderpattern\\iproductcategorybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}|TheGrace.Domain\\TheGrace.Domain.csproj|solutionrelative:thegrace.domain\\entities\\builder\\productcategorybuilderpattern\\iproductcategorybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductCategoryService.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Services\\ProductCategory\\ProductCategoryService.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Services\\ProductCategory\\ProductCategoryService.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Services\\ProductCategory\\ProductCategoryService.cs",
+              "RelativeToolTip": "TheGrace.Application\\Services\\ProductCategory\\ProductCategoryService.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T10:49:16.721Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepositoryBase.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Abstractions\\Repositories\\IRepositoryBase.cs",
+              "RelativeDocumentMoniker": "TheGrace.Domain\\Abstractions\\Repositories\\IRepositoryBase.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Abstractions\\Repositories\\IRepositoryBase.cs",
+              "RelativeToolTip": "TheGrace.Domain\\Abstractions\\Repositories\\IRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:26:01.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProductCategoryService.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Services\\ProductCategory\\IProductCategoryService.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Services\\ProductCategory\\IProductCategoryService.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Services\\ProductCategory\\IProductCategoryService.cs",
+              "RelativeToolTip": "TheGrace.Application\\Services\\ProductCategory\\IProductCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T10:48:35.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "TheGrace.Domain\\Entities\\Product.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "TheGrace.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwCEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:11:09.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductBuilder.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Builder\\ProductBuilderPattern\\ProductBuilder.cs",
+              "RelativeDocumentMoniker": "TheGrace.Domain\\Entities\\Builder\\ProductBuilderPattern\\ProductBuilder.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Builder\\ProductBuilderPattern\\ProductBuilder.cs",
+              "RelativeToolTip": "TheGrace.Domain\\Entities\\Builder\\ProductBuilderPattern\\ProductBuilder.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAA8wGUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T10:57:52.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "TheGrace.Domain\\Entities\\ProductCategory.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\ProductCategory.cs",
+              "RelativeToolTip": "TheGrace.Domain\\Entities\\ProductCategory.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:50:24.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Persistence\\Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "TheGrace.Persistence\\Repositories\\RepositoryBase.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Persistence\\Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "TheGrace.Persistence\\Repositories\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:24:51.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EFUnitOfWork.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Persistence\\EFUnitOfWork.cs",
+              "RelativeDocumentMoniker": "TheGrace.Persistence\\EFUnitOfWork.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Persistence\\EFUnitOfWork.cs",
+              "RelativeToolTip": "TheGrace.Persistence\\EFUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:23:31.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.API\\Controllers\\V1\\ProductController.cs",
+              "RelativeDocumentMoniker": "TheGrace.API\\Controllers\\V1\\ProductController.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.API\\Controllers\\V1\\ProductController.cs",
+              "RelativeToolTip": "TheGrace.API\\Controllers\\V1\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:29:09.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Error.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\Error.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Abstractions\\Shared\\Error.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\Error.cs",
+              "RelativeToolTip": "TheGrace.Application\\Abstractions\\Shared\\Error.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:40:16.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Services\\Product\\ProductService.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Services\\Product\\ProductService.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Services\\Product\\ProductService.cs",
+              "RelativeToolTip": "TheGrace.Application\\Services\\Product\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T12:03:46.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IValidationResult.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\IValidationResult.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Abstractions\\Shared\\IValidationResult.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\IValidationResult.cs",
+              "RelativeToolTip": "TheGrace.Application\\Abstractions\\Shared\\IValidationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:40:52.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Result.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\Result.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Abstractions\\Shared\\Result.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\Result.cs",
+              "RelativeToolTip": "TheGrace.Application\\Abstractions\\Shared\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:40:55.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResultT.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\ResultT.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Abstractions\\Shared\\ResultT.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\ResultT.cs",
+              "RelativeToolTip": "TheGrace.Application\\Abstractions\\Shared\\ResultT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:40:58.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ValidationResult.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\ValidationResult.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Abstractions\\Shared\\ValidationResult.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\ValidationResult.cs",
+              "RelativeToolTip": "TheGrace.Application\\Abstractions\\Shared\\ValidationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:41:01.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ValidationResultT.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\ValidationResultT.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\Abstractions\\Shared\\ValidationResultT.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\Abstractions\\Shared\\ValidationResultT.cs",
+              "RelativeToolTip": "TheGrace.Application\\Abstractions\\Shared\\ValidationResultT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:41:06.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "TheGrace.Application\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Application\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "TheGrace.Application\\DependencyInjection\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:48:03.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductCategoryBuilder.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\ProductCategoryBuilder.cs",
+              "RelativeDocumentMoniker": "TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\ProductCategoryBuilder.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\ProductCategoryBuilder.cs",
+              "RelativeToolTip": "TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\ProductCategoryBuilder.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAMwEUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T10:26:09.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.API\\Program.cs",
+              "RelativeDocumentMoniker": "TheGrace.API\\Program.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.API\\Program.cs",
+              "RelativeToolTip": "TheGrace.API\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T11:47:55.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IProductCategoryBuilder.cs",
+              "DocumentMoniker": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\IProductCategoryBuilder.cs",
+              "RelativeDocumentMoniker": "TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\IProductCategoryBuilder.cs",
+              "ToolTip": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\IProductCategoryBuilder.cs",
+              "RelativeToolTip": "TheGrace.Domain\\Entities\\Builder\\ProductCategoryBuilderPattern\\IProductCategoryBuilder.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwBIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T10:56:29.874Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

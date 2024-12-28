@@ -1,0 +1,13 @@
+D:\TheGrace\TheGrace\TheGrace.Domain\bin\Debug\net8.0\TheGrace.Domain.deps.json
+D:\TheGrace\TheGrace\TheGrace.Domain\bin\Debug\net8.0\TheGrace.Domain.dll
+D:\TheGrace\TheGrace\TheGrace.Domain\bin\Debug\net8.0\TheGrace.Domain.pdb
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.csproj.AssemblyReference.cache
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.AssemblyInfoInputs.cache
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.AssemblyInfo.cs
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.csproj.CoreCompileInputs.cache
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.sourcelink.json
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.dll
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\refint\TheGrace.Domain.dll
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\TheGrace.Domain.pdb
+D:\TheGrace\TheGrace\TheGrace.Domain\obj\Debug\net8.0\ref\TheGrace.Domain.dll

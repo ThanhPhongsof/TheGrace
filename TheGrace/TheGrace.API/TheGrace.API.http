@@ -1,0 +1,6 @@
+@TheGrace.API_HostAddress = http://localhost:5126
+
+GET {{TheGrace.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
