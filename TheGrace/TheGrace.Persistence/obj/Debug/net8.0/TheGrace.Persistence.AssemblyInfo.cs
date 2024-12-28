@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheGrace.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e05d3e885049bf73c89fcbe982661a3d28b8526b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cede8f6c70e510ea2199fdd333c0c1b6925a5d63")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheGrace.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheGrace.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

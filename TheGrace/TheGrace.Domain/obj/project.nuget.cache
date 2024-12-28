@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2Inx9GOsHPg=",
+  "dgSpecHash": "sgxkRFDAXCw=",
   "success": true,
   "projectFilePath": "D:\\TheGrace\\TheGrace\\TheGrace.Domain\\TheGrace.Domain.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,9 @@
     "C:\\Users\\ttpho\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\ttpho\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ttpho\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
-    "C:\\Users\\ttpho\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    "C:\\Users\\ttpho\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\ttpho\\.nuget\\packages\\sonaranalyzer.csharp\\9.7.0.75501\\sonaranalyzer.csharp.9.7.0.75501.nupkg.sha512",
+    "C:\\Users\\ttpho\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
   ],
   "logs": [
     {

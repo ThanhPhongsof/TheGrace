@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheGrace.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90c79332ea0a3bab76c62b250b8783f884d8f0a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cede8f6c70e510ea2199fdd333c0c1b6925a5d63")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheGrace.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheGrace.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
