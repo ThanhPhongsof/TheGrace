@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TheGrace.Application.Mapper;
+using TheGrace.Application.Services.Product;
 using TheGrace.Application.Services.ProductCategory;
-using TheGrace.Application.Services.V1.TimeZone;
+using TheGrace.Application.Services.TimeZone;
 using TheGrace.Domain.Exceptions;
 
 namespace TheGrace.Application.DependencyInjection.Extensions;
@@ -26,6 +27,6 @@ public static class ServiceCollectionExtensions
 
     public static IServiceCollection AddConfigurationServiceCommon(this IServiceCollection services)
         => services
-        .AddScoped<IProductCategoryService, ProductCategoryService>();
-        //.AddScoped<IProductCategoryService, Prod>();
+        .AddScoped<IProductCategoryService, ProductCategoryService>()
+        .AddScoped<IProductService, ProductService>();
 }

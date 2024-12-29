@@ -52,7 +52,7 @@ public class RepositoryBase<TEntity, TKey> : IRepositoryBase<TEntity, TKey> wher
             return;
         }
 
-        while (iSkip < iEntityTake)
+        while (iSkip < iTotalCount)
         {
             var entityTake = entities.Skip(iSkip).Take(iEntityTake).ToList();
             _context.Set<TEntity>().AddRange(entityTake);
@@ -63,6 +63,7 @@ public class RepositoryBase<TEntity, TKey> : IRepositoryBase<TEntity, TKey> wher
                 iEntityTake = iTotalCount - iSkip;
             }
         }
+        _context.SaveChanges();
     }
 
     public void UpdateMultiple(List<TEntity> entities)

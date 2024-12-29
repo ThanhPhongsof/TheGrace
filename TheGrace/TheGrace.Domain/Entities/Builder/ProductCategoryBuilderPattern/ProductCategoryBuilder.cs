@@ -4,8 +4,6 @@ namespace TheGrace.Domain.Entities.Builder.ProductCategoryBuilderPattern;
 
 public class ProductCategoryBuilder : IProductCategoryBuilder
 {
-    public Guid Id { get; set; }
-
     public string Name { get; set; }
 
     public string Description { get; set; }
@@ -24,7 +22,6 @@ public class ProductCategoryBuilder : IProductCategoryBuilder
 
     public ProductCategoryBuilder()
     {
-        Id = Guid.NewGuid();
         CreatedBy = "system";
         UpdatedBy = CreatedBy;
     }
@@ -69,6 +66,6 @@ public class ProductCategoryBuilder : IProductCategoryBuilder
 
     public ProductCategory Build()
     {
-        return new ProductCategory(Id, Type, Name, Description, IsInActive, CreatedBy, CreatedAt, UpdatedBy, UpdatedAt);
+        return new ProductCategory(Type, Name, Description, IsInActive, CreatedBy, CreatedAt, UpdatedBy, UpdatedAt, 0);
     }
 }

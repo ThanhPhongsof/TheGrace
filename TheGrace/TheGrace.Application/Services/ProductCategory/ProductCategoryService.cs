@@ -1,8 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Azure;
+using Microsoft.EntityFrameworkCore;
 using TheGrace.Application.Abstractions.Shared;
-using TheGrace.Application.Services.V1.TimeZone;
+using TheGrace.Application.Services.TimeZone;
 using TheGrace.Domain.Abstractions;
 using TheGrace.Domain.Abstractions.Repositories;
+using TheGrace.Domain.Contract;
+using TheGrace.Domain.Entities.Builder.ProductBuilderPattern;
 using TheGrace.Domain.Entities.Builder.ProductCategoryBuilderPattern;
 using TheGrace.Domain.Enumerations;
 using TheGrace.Persistence;
@@ -12,19 +16,22 @@ namespace TheGrace.Application.Services.ProductCategory;
 
 public class ProductCategoryService : IProductCategoryService
 {
-    private readonly IRepositoryBase<Model.ProductCategory, Guid> _productCategoryRepository;
+    private readonly IRepositoryBase<Model.ProductCategory, int> _productCategoryRepository;
+    private readonly IMapper _mapper;
     private readonly IUnitOfWork _unitOfWork;
     private readonly ITimeZoneService _timeZoneService;
 
     public ProductCategoryService(
-        IRepositoryBase<Model.ProductCategory, Guid> productCategoryRepository,
+        IRepositoryBase<Model.ProductCategory, int> productCategoryRepository,
         ITimeZoneService timeZoneService,
         IUnitOfWork unitOfWork,
+        IMapper mapper
         )
     {
         _productCategoryRepository = productCategoryRepository;
         _timeZoneService = timeZoneService;
         _unitOfWork = unitOfWork;
+        _mapper = mapper;
     }
 
     public Task CreateOrUpdate(ProductCategoryBuilder productCategory)
@@ -92,8 +99,11 @@ public class ProductCategoryService : IProductCategoryService
         return Result.Success();
     }
 
-    public Task GetAll()
+    public async Task<Result<IEnumerable<ProductCategoryResponse>>> GetAll()
     {
-        throw new NotImplementedException();
+        var productCategories = _productCategoryRepository.FindAll().AsAsyncEnumerable();
+        var result = _mapper.Map<IEnumerable<ProductCategoryResponse>>(productCategories);
+
+        return Result.Success(result);
     }
 }

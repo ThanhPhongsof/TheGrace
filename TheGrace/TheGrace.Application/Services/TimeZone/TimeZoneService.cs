@@ -1,6 +1,6 @@
 ﻿using TheGrace.Domain.Exceptions;
 
-namespace TheGrace.Application.Services.V1.TimeZone;
+namespace TheGrace.Application.Services.TimeZone;
 
 public class TimeZoneService : ITimeZoneService
 {

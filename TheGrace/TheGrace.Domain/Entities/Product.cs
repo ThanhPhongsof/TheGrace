@@ -4,9 +4,9 @@ using TheGrace.Domain.Entities.EntityBase;
 
 namespace TheGrace.Domain.Entities;
 
-public class Product : EntityAudit<Guid>
+public class Product : EntityAudit<int>
 {
-    public Guid ProductCategoryId { get; private set; }
+    public int ProductCategoryId { get; private set; }
 
     public int Type { get; private set; }
 
@@ -33,10 +33,11 @@ public class Product : EntityAudit<Guid>
 
     public Product() { }
 
-    public Product(Guid id, int type, string code, string name, string image, string description, decimal price, int quantity, ProductCategory productCategory)
+    public Product(int type, string code, string name, string image, string description, decimal price, int quantity,
+                   bool isInActive, string createdBy, DateTimeOffset createdAt, string updatedBy, DateTimeOffset updatedAt,
+                   ProductCategory productCategory, int? id)
     {
-        Id = Id;
-        ProductCategoryId = productCategory.Id;
+        Id = id ?? 0;
         Type = type;
         Code = code;
         Name = name;
@@ -44,6 +45,12 @@ public class Product : EntityAudit<Guid>
         Description = description;
         Price = price;
         Quantity = quantity;
-        ProductCategory = productCategory;
+        IsInActive = isInActive;
+        CreatedBy = createdBy;
+        CreatedAt = createdAt;
+        UpdatedBy = updatedBy;
+        UpdatedAt = updatedAt;
+        //ProductCategory = productCategory;
+        ProductCategoryId = productCategory.Id;
     }
 }

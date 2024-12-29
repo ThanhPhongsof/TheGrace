@@ -1,4 +1,4 @@
-﻿namespace TheGrace.Application.Services.V1.TimeZone;
+﻿namespace TheGrace.Application.Services.TimeZone;
 
 public interface ITimeZoneService
 {

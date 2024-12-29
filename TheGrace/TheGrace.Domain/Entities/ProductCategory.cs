@@ -4,7 +4,7 @@ using TheGrace.Domain.Entities.EntityBase;
 
 namespace TheGrace.Domain.Entities;
 
-public class ProductCategory : EntityAudit<Guid>
+public class ProductCategory : EntityAudit<int>
 {
     [Column(TypeName = "nvarchar(256)")]
     [MaxLength(256)]
@@ -20,10 +20,10 @@ public class ProductCategory : EntityAudit<Guid>
 
     public ProductCategory() { }
 
-    public ProductCategory(Guid id, int type, string name, string description, 
-                           bool isInActive, string createdBy, DateTimeOffset createdAt, string updatedBy, DateTimeOffset updatedAt)
+    public ProductCategory(int type, string name, string description, 
+                           bool isInActive, string createdBy, DateTimeOffset createdAt, string updatedBy, DateTimeOffset updatedAt, int? id)
     {
-        Id = id;
+        Id = id ?? 0;
         Type = type;
         Name = name;
         Description = description;

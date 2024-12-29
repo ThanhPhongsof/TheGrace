@@ -1,4 +1,7 @@
-﻿namespace TheGrace.Domain.Entities.Builder.ProductBuilderPattern;
+﻿using TheGrace.Domain.Abstractions;
+using TheGrace.Domain.Enumerations;
+
+namespace TheGrace.Domain.Entities.Builder.ProductBuilderPattern;
 
 public class ProductBuilder : IProductBuilder
 {
@@ -32,12 +35,18 @@ public class ProductBuilder : IProductBuilder
 
     public ProductBuilder()
     {
-        Id = Guid.NewGuid();
+        Id = SequentialGuid.NewGuid();
     }
 
     public IProductBuilder SetProductCategory(ProductCategory productCategory)
     {
         ProductCategory = productCategory;
+        return this;
+    }
+
+    public IProductBuilder SetType(StatusEnum status)
+    {
+        Type = status.Value;
         return this;
     }
 
@@ -61,13 +70,13 @@ public class ProductBuilder : IProductBuilder
 
     public IProductBuilder SetImage(string image)
     {
-        Image = image; 
+        Image = image;
         return this;
     }
 
     public IProductBuilder SetPrice(decimal price)
     {
-        Price = price; 
+        Price = price;
         return this;
     }
 
@@ -99,6 +108,8 @@ public class ProductBuilder : IProductBuilder
 
     public Product Build()
     {
-        return new Product(Id, Type, Code, Name, Image, Description, Price, Quantity, ProductCategory);
+        return new Product(Type, Code, Name, Image, Description, Price, Quantity, 
+                           IsInActive, CreatedBy, CreatedAt, UpdatedBy, UpdatedAt, 
+                           ProductCategory, 0);
     }
 }
