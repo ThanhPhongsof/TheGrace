@@ -321,10 +321,10 @@ public class ProductService : IProductService
     {
         var categoryImages = new Dictionary<string, string>
         {
-            { "Phone", "https://drive.google.com/drive/folders/1Piva1ISzZAEeD_4przdwjBESNv3JxpD4" },
-            { "Laptop", "https://drive.google.com/drive/folders/1QZq0HBpWfgNkh3WlgdXKK-xb6dtoywyc" },
-            { "SmartWatch", "https://drive.google.com/drive/folders/1I82E5TurjOPNS0IkeCZz1CxCV6ye9AlV" },
-            { "Tablet", "https://drive.google.com/drive/folders/19ucfJKPxgMKJiCZkPkcqrQodN8UY0RUi" }
+            { "Phone", "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/12/02/iphone-16-pro-max-sa-mac-1.png" },
+            { "Laptop", "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/05/macbook-pro-16-inch-m4-pro-den-1.png" },
+            { "SmartWatch", "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/12/05/watch-se-2024-lte-44mm-anh-sao-1.png" },
+            { "Tablet", "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-xam-wifi-1.png" }
         };
 
         return categoryImages;
