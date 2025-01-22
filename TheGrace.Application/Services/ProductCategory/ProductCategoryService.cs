@@ -5,7 +5,7 @@ using TheGrace.Application.Abstractions.Shared;
 using TheGrace.Application.Services.TimeZone;
 using TheGrace.Domain.Abstractions;
 using TheGrace.Domain.Abstractions.Repositories;
-using TheGrace.Domain.Contract;
+using TheGrace.Domain.Contract.ProductCategory;
 using TheGrace.Domain.Entities.Builder.ProductBuilderPattern;
 using TheGrace.Domain.Entities.Builder.ProductCategoryBuilderPattern;
 using TheGrace.Domain.Enumerations;
@@ -32,11 +32,6 @@ public class ProductCategoryService : IProductCategoryService
         _timeZoneService = timeZoneService;
         _unitOfWork = unitOfWork;
         _mapper = mapper;
-    }
-
-    public Task CreateOrUpdate(ProductCategoryBuilder productCategory)
-    {
-        return Task.CompletedTask;
     }
 
     public async Task<Result> CreateProductCategories()
@@ -99,7 +94,7 @@ public class ProductCategoryService : IProductCategoryService
         return Result.Success();
     }
 
-    public async Task<Result<IEnumerable<ProductCategoryResponse>>> GetAll()
+    public async Task<Result<IEnumerable<ProductCategoryResponse>>> GetProductCategories()
     {
         var productCategories = _productCategoryRepository.FindAll().AsAsyncEnumerable();
         var result = _mapper.Map<IEnumerable<ProductCategoryResponse>>(productCategories);

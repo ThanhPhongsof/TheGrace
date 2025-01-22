@@ -1,4 +1,5 @@
 using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
+using Microsoft.Extensions.Options;
 using Serilog;
 using TheGrace.API.DependencyInjection.Extentions;
 using TheGrace.API.Middleware;
@@ -12,7 +13,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddConfigurationSeriLog(builder.Configuration);
 
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") // Add the Angular app's URL
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 builder.Services.AddConfigurationTimeZone(builder.Configuration);
 
 // Configure Middleware
@@ -23,6 +32,7 @@ builder.Services.AddConfigurationSql();
 builder.Services.AddRepositoryBaseConfiguration();
 builder.Services.AddConfigurationAutoMapper();
 builder.Services.AddConfigurationServiceCommon();
+builder.Services.AddConfigurationController();
 
 // Configure Swagger
 builder.Services
@@ -47,8 +57,9 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 //app.UseAuthorization();
 
 app.MapControllers();
+app.UseCors("AllowSpecificOrigins");
 
-if (builder.Environment.IsDevelopment() || builder.Environment.IsStaging())
+//if (builder.Environment.IsDevelopment() || builder.Environment.IsStaging())
     app.ConfigureSwagger();
 
 try

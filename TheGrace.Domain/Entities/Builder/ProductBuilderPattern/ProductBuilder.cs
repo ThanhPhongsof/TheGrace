@@ -5,7 +5,7 @@ namespace TheGrace.Domain.Entities.Builder.ProductBuilderPattern;
 
 public class ProductBuilder : IProductBuilder
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
 
     public int Type { get; set; }
 
@@ -35,7 +35,7 @@ public class ProductBuilder : IProductBuilder
 
     public ProductBuilder()
     {
-        Id = SequentialGuid.NewGuid();
+
     }
 
     public IProductBuilder SetProductCategory(ProductCategory productCategory)
@@ -108,8 +108,8 @@ public class ProductBuilder : IProductBuilder
 
     public Product Build()
     {
-        return new Product(Type, Code, Name, Image, Description, Price, Quantity, 
-                           IsInActive, CreatedBy, CreatedAt, UpdatedBy, UpdatedAt, 
-                           ProductCategory, 0);
+        return new Product(Type, Code, Name, Image, Description, Price, Quantity,
+                           IsInActive, CreatedBy, CreatedAt, UpdatedBy, UpdatedAt,
+                           ProductCategory, Id);
     }
 }

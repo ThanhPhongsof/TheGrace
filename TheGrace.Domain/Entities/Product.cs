@@ -1,6 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
+using System.Xml.Linq;
 using TheGrace.Domain.Entities.EntityBase;
+using TheGrace.Domain.Enumerations;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TheGrace.Domain.Entities;
 
@@ -52,5 +56,23 @@ public class Product : EntityAudit<int>
         UpdatedAt = updatedAt;
         //ProductCategory = productCategory;
         ProductCategoryId = productCategory.Id;
+    }
+
+    public void Update(StatusEnum type, string name, string description, decimal price, int quantity, string updatedBy, DateTimeOffset updatedAt)
+    {
+        Type = type;
+        Name = name;
+        Description = description;
+        Price = price;
+        Quantity = quantity;
+        UpdatedBy = updatedBy;
+        UpdatedAt = updatedAt;
+    }
+
+    public void UpdateSoftDelete(bool isInActive, string updatedBy, DateTimeOffset updatedAt)
+    {
+        IsInActive = isInActive;
+        UpdatedBy = updatedBy;
+        UpdatedAt = updatedAt;
     }
 }
