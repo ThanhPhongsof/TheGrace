@@ -16,10 +16,13 @@ using TheGrace.Persistence;
 using AutoMapper;
 using static System.Net.Mime.MediaTypeNames;
 using System;
+
 using TheGrace.Domain.Entities;
+
 using Microsoft.IdentityModel.Tokens;
 using System.Diagnostics.Eventing.Reader;
 using TheGrace.Domain.Exceptions.Commons;
+using Castle.Components.DictionaryAdapter.Xml;
 
 namespace TheGrace.Application.Services.Product;
 
@@ -111,8 +114,8 @@ public class ProductService : IProductService
             var productsQuery = string.IsNullOrWhiteSpace(request.SearchTerm)
             ? _productRepository.FindAll()
             : _productRepository.FindAll(
-                x => (x.Name.Contains(request.SearchTerm) || x.Description.Contains(request.SearchTerm))
-                     && request.FilterType == 0 ? x.Type == x.Type : x.Type == request.FilterType
+                x => (EF.Functions.Like(x.Name, $"%{request.SearchTerm}%") || EF.Functions.Like(x.Description, $"%{request.SearchTerm}%"))
+                     && (request.FilterType == 0 || x.Type == request.FilterType)
                      && x.IsInActive == request.FilterIsInDelete
                 );
 
