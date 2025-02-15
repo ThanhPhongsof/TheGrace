@@ -70,7 +70,7 @@ public class ProductController : ApiController
     }
 
     [HttpPost]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(Result<ContractProduct.ProductResponse>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> CreateProduct([FromBody] ContractProduct.Command.CreateOrUpdateProductCommand request)
     {
@@ -80,7 +80,7 @@ public class ProductController : ApiController
     }
 
     [HttpPut("{productId}")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(Result<ContractProduct.ProductResponse>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> UpdateProduct(int productId, [FromBody] ContractProduct.Command.UpdateProductCommand request)
     {

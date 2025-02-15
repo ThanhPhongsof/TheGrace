@@ -18,7 +18,7 @@ public interface IProductService
 
     Task<Result> ChangeMultipleType(ContractProduct.Command.ChangeMultipleTypeOfProductCommand request);
 
-    Task<Result> CreateOrUpdateProduct(ContractProduct.Command.CreateOrUpdateProductCommand request);
+    Task<Result<ContractProduct.ProductResponse>> CreateOrUpdateProduct(ContractProduct.Command.CreateOrUpdateProductCommand request);
 
     Task<Result> CreateProducts();
 }

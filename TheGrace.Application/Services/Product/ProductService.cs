@@ -156,9 +156,10 @@ public class ProductService : IProductService
         return Result.Success(result);
     }
 
-    public async Task<Result> CreateOrUpdateProduct(ContractProduct.Command.CreateOrUpdateProductCommand request)
+    public async Task<Result<ContractProduct.ProductResponse>> CreateOrUpdateProduct(ContractProduct.Command.CreateOrUpdateProductCommand request)
     {
         var product = await _productRepository.FindByIdAsync(request.id);
+        var productId = 0;
 
         DateTimeOffset createdAt = _timeZoneService.GetCurrentTime();
 
@@ -190,6 +191,9 @@ public class ProductService : IProductService
                                  .Build();
 
             _productRepository.Add(itemProduct);
+
+            await _unitOfWork.CommitAsync();
+            productId = itemProduct.Id;
         }
         else
         {
@@ -205,11 +209,12 @@ public class ProductService : IProductService
                 updatedBy,
                 createdAt);
             _productRepository.Update(product);
+
+            await _unitOfWork.CommitAsync();
+            productId = product.Id;
         }
 
-        await _unitOfWork.CommitAsync();
-
-        return Result.Success();
+        return await GetProduct(new ContractProduct.Query.GetProductQuery(productId));
     }
 
     public async Task<Result> DeleteProduct(ContractProduct.Command.DeleteProductCommand request)
