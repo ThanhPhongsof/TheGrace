@@ -111,13 +111,18 @@ public class ProductService : IProductService
         }
         else // =>> Entity Framework Core
         {
-            var productsQuery = string.IsNullOrWhiteSpace(request.SearchTerm)
-            ? _productRepository.FindAll()
-            : _productRepository.FindAll(
-                x => (EF.Functions.Like(x.Name, $"%{request.SearchTerm}%") || EF.Functions.Like(x.Description, $"%{request.SearchTerm}%"))
-                     && (request.FilterType == 0 || x.Type == request.FilterType)
-                     && x.IsInActive == request.FilterIsInDelete
-                );
+            var productsQuery = _productRepository.FindAll();
+
+            if (string.IsNullOrWhiteSpace(request.SearchTerm))
+            {
+                productsQuery = productsQuery.Where(x =>
+                    EF.Functions.Like(x.Name, $"%{request.SearchTerm}%") ||
+                    EF.Functions.Like(x.Description, $"%{request.SearchTerm}%"));
+            }
+
+            productsQuery = productsQuery.Where(x =>
+                (request.FilterType == 0 || x.Type == request.FilterType)
+                && x.IsInActive == request.FilterIsInDelete);
 
             productsQuery = request.SortOrder == SortOrder.Descending
             ? productsQuery.OrderByDescending(GetSortProperty(request))
