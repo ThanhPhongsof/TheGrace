@@ -1,10 +1,9 @@
-﻿
-using System.Text.Json;
+﻿using System.Text.Json;
 using TheGrace.Domain.Exceptions.Commons;
 
 namespace TheGrace.API.Middleware;
 
-public class ExceptionHandlingMiddleware : IMiddleware
+internal sealed class ExceptionHandlingMiddleware : IMiddleware
 {
     private readonly ILogger<ExceptionHandlingMiddleware> _logger;
 

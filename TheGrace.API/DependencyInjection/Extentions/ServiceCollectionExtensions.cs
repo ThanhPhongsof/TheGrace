@@ -1,5 +1,5 @@
 ﻿using Serilog;
-using TheGrace.Application.JsonConvert;
+using TheGrace.Contract.JsonConvert;
 
 namespace TheGrace.API.DependencyInjection.Extentions;
 

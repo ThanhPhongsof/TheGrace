@@ -7,9 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\Product\IProductServiceOld.cs" />
+    <Compile Remove="Services\Product\ProductServiceOld.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+	<PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SonarAnalyzer.CSharp" Version="9.7.0.75501">
       <PrivateAssets>all</PrivateAssets>
@@ -22,8 +29,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TheGrace.Contract\TheGrace.Contract.csproj" />
     <ProjectReference Include="..\TheGrace.Domain\TheGrace.Domain.csproj" />
+    <ProjectReference Include="..\TheGrace.Infrastructure\TheGrace.Infrastructure.csproj" />
     <ProjectReference Include="..\TheGrace.Persistence\TheGrace.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\V1\Commands\ProductCategory\" />
+    <Folder Include="UseCases\V1\Events\" />
   </ItemGroup>
 
 </Project>

@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Contract", "TheGrace.Contract\TheGrace.Contract.csproj", "{351DC320-9A65-4F17-A033-E40096CD8DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Infrastructure", "TheGrace.Infrastructure\TheGrace.Infrastructure.csproj", "{28C634DA-9C16-47CD-B5FF-F36F90C19A86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AAC7FB3-B971-42C0-BB76-8073BADA0F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351DC320-9A65-4F17-A033-E40096CD8DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351DC320-9A65-4F17-A033-E40096CD8DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351DC320-9A65-4F17-A033-E40096CD8DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351DC320-9A65-4F17-A033-E40096CD8DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C634DA-9C16-47CD-B5FF-F36F90C19A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C634DA-9C16-47CD-B5FF-F36F90C19A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C634DA-9C16-47CD-B5FF-F36F90C19A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C634DA-9C16-47CD-B5FF-F36F90C19A86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
