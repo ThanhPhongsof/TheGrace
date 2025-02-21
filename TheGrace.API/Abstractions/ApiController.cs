@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using TheGrace.Application.Abstractions.Shared;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using TheGrace.Contract.Abstractions.Shared;
 
 namespace MySymptoms_Server.Presentation.Abstractions;
 
@@ -7,6 +8,9 @@ namespace MySymptoms_Server.Presentation.Abstractions;
 [Route("api/v{version:apiVersion}/[controller]")]
 public abstract class ApiController : ControllerBase
 {
+    protected readonly ISender Sender;
+
+    protected ApiController(ISender sender) => Sender = sender;
 
     //protected async Task<Result<Response.UserInfoResponse>> GetUserInfoByAuthorization()
     //{

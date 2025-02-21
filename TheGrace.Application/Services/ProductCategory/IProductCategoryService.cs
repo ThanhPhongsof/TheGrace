@@ -1,5 +1,4 @@
-﻿using TheGrace.Application.Abstractions.Shared;
-using TheGrace.Domain.Contract.ProductCategory;
+﻿using TheGrace.Contract.Services.ProductCategory;
 using TheGrace.Domain.Entities.Builder.ProductBuilderPattern;
 using TheGrace.Domain.Entities.Builder.ProductCategoryBuilderPattern;
 
@@ -7,7 +6,7 @@ namespace TheGrace.Application.Services.ProductCategory;
 
 public interface IProductCategoryService
 {
-    Task<Result<IEnumerable<ProductCategoryResponse>>> GetProductCategories();
+    Task<IEnumerable<Response.ProductCategoryResponse>> GetProductCategories();
 
-    Task<Result> CreateProductCategories();
+    //Task<Result> CreateProductCategories();
 }

@@ -4,6 +4,7 @@ using Serilog;
 using TheGrace.API.DependencyInjection.Extentions;
 using TheGrace.API.Middleware;
 using TheGrace.Application.DependencyInjection.Extensions;
+using TheGrace.Application.Hubs;
 using TheGrace.Persistence.DependencyInjection.Extentions;
 using TheGrace.Persistence.DependencyInjection.Options;
 
@@ -12,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add configuration
 builder.AddConfigurationSeriLog(builder.Configuration);
 
+builder.Services.AddConfigureMediatR();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddCors(options =>
 {
@@ -49,9 +51,13 @@ builder.Services
         options.SubstituteApiVersionInUrl = true;
     });
 
+//builder.Services.AddSignalR();
+
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+//app.MapHub<RealtimeHub>("/realtimeHub");
 
 //app.UseAuthentication();
 //app.UseAuthorization();
@@ -60,7 +66,7 @@ app.MapControllers();
 app.UseCors("AllowSpecificOrigins");
 
 //if (builder.Environment.IsDevelopment() || builder.Environment.IsStaging())
-    app.ConfigureSwagger();
+app.ConfigureSwagger();
 
 try
 {

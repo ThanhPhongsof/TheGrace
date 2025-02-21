@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Azure;
-using TheGrace.Application.Abstractions.Shared;
-using TheGrace.Domain.Contract.Product;
-using TheGrace.Domain.Contract.ProductCategory;
+using TheGrace.Contract.Abstractions.Shared;
+using ContractProduct = TheGrace.Contract.Services.Product;
+using ContractProductCategory = TheGrace.Contract.Services.ProductCategory;
 using TheGrace.Domain.Entities;
 
 namespace TheGrace.Application.Mapper;
@@ -11,8 +11,8 @@ public class ServiceProfile : Profile
 {
     public ServiceProfile()
     {
-        CreateMap<ProductCategory, ProductCategoryResponse>().ReverseMap();
-        CreateMap<Product, ProductResponse>()
+        CreateMap<ProductCategory, ContractProductCategory.Response.ProductCategoryResponse>().ReverseMap();
+        CreateMap<Product, ContractProduct.Response.ProductResponse>()
             .ForMember(dest => dest.Id, opt => opt.MapFrom(p => p.Id))
             .ForMember(dest => dest.ProductCategoryId, opt => opt.MapFrom(p => p.ProductCategoryId))
             .ForMember(dest => dest.Image, opt => opt.MapFrom(p => p.Image))
@@ -26,6 +26,6 @@ public class ServiceProfile : Profile
             .ForMember(dest => dest.CreatedBy, opt => opt.MapFrom(p => p.CreatedBy))
             .ForMember(dest => dest.UpdatedAt, opt => opt.MapFrom(p => p.UpdatedAt))
             .ForMember(dest => dest.UpdatedBy, opt => opt.MapFrom(p => p.UpdatedBy));
-        CreateMap<PagedResult<Product>, PagedResult<ProductResponse>>().ReverseMap();
+        CreateMap<PagedResult<Product>, PagedResult<ContractProduct.Response.ProductResponse>>().ReverseMap();
     }
 }
