@@ -4,7 +4,7 @@ using Serilog;
 using TheGrace.API.DependencyInjection.Extentions;
 using TheGrace.API.Middleware;
 using TheGrace.Application.DependencyInjection.Extensions;
-using TheGrace.Contract.Hubs;
+using TheGrace.Infrastructure.Hubs;
 using TheGrace.Persistence.DependencyInjection.Extentions;
 using TheGrace.Persistence.DependencyInjection.Options;
 
