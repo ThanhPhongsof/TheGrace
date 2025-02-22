@@ -11,6 +11,7 @@ using Model = TheGrace.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using TheGrace.Persistence;
 using TheGrace.Application.Services.TimeZone;
+using MediatR;
 
 namespace TheGrace.Application.UseCases.V1.Commands.Product;
 internal sealed class DeleteProductCommandHandler : ICommandHandler<Command.DeleteProductCommand>
@@ -18,12 +19,14 @@ internal sealed class DeleteProductCommandHandler : ICommandHandler<Command.Dele
     private readonly ApplicationDbContext _context;
     private readonly ITimeZoneService _timeZoneService;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IPublisher _publisher;
 
-    public DeleteProductCommandHandler(ApplicationDbContext context, IUnitOfWork unitOfWork, ITimeZoneService timeZoneService)
+    public DeleteProductCommandHandler(ApplicationDbContext context, IUnitOfWork unitOfWork, ITimeZoneService timeZoneService, IPublisher publisher)
     {
         _context = context;
         _unitOfWork = unitOfWork;
         _timeZoneService = timeZoneService;
+        _publisher = publisher;
     }
 
     public async Task<Result> Handle(Command.DeleteProductCommand request, CancellationToken cancellationToken)
@@ -36,6 +39,8 @@ internal sealed class DeleteProductCommandHandler : ICommandHandler<Command.Dele
                            .SetProperty(b => b.UpdatedBy, "Kang"));
 
         await _unitOfWork.CommitAsync();
+
+        await _publisher.Publish(new DomainEvent.ProductChangedEvent("Kang", request.id));
 
         return Result.Success();
     }
