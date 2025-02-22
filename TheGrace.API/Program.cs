@@ -4,7 +4,7 @@ using Serilog;
 using TheGrace.API.DependencyInjection.Extentions;
 using TheGrace.API.Middleware;
 using TheGrace.Application.DependencyInjection.Extensions;
-using TheGrace.Application.Hubs;
+using TheGrace.Contract.Hubs;
 using TheGrace.Persistence.DependencyInjection.Extentions;
 using TheGrace.Persistence.DependencyInjection.Options;
 
@@ -21,7 +21,8 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://localhost:4200") // Add the Angular app's URL
               .AllowAnyHeader()
-              .AllowAnyMethod();
+              .AllowAnyMethod()
+              .AllowCredentials();
     });
 });
 builder.Services.AddConfigurationTimeZone(builder.Configuration);
@@ -51,13 +52,16 @@ builder.Services
         options.SubstituteApiVersionInUrl = true;
     });
 
-//builder.Services.AddSignalR();
+builder.Services.AddSignalR(options =>
+{
+    options.KeepAliveInterval = TimeSpan.FromSeconds(10);
+});
 
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-//app.MapHub<RealtimeHub>("/realtimeHub");
+app.MapHub<ProductHub>("/productHub");
 
 //app.UseAuthentication();
 //app.UseAuthorization();

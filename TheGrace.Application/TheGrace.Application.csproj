@@ -37,7 +37,6 @@
 
   <ItemGroup>
     <Folder Include="UseCases\V1\Commands\ProductCategory\" />
-    <Folder Include="UseCases\V1\Events\" />
   </ItemGroup>
 
 </Project>

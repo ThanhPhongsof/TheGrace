@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using MediatR;
 using TheGrace.Application.Services.Product;
 using TheGrace.Application.Services.TimeZone;
 using TheGrace.Contract.Abstractions.Shared;
@@ -22,12 +23,14 @@ internal sealed class CreateProductCommandHandler : ICommandHandler<Command.Crea
     private readonly IUnitOfWork _unitOfWork;
     private readonly ITimeZoneService _timeZoneService;
     private readonly IProductService _productService;
+    private readonly IPublisher _publisher;
 
     public CreateProductCommandHandler(
         IRepositoryBase<Model.Product, int> productRepository,
         IRepositoryBase<Model.ProductCategory, int> productCategoryRepository,
         IUnitOfWork unitOfWork,
         ITimeZoneService timeZoneService,
+        IPublisher publisher,
         IProductService productService
         )
     {
@@ -36,6 +39,7 @@ internal sealed class CreateProductCommandHandler : ICommandHandler<Command.Crea
         _unitOfWork = unitOfWork;
         _timeZoneService = timeZoneService;
         _productService = productService;
+        _publisher = publisher;
     }
 
     public async Task<Result<Response.ProductResponse>> Handle(Command.CreateProductCommand request, CancellationToken cancellationToken)
@@ -71,6 +75,8 @@ internal sealed class CreateProductCommandHandler : ICommandHandler<Command.Crea
 
         await _unitOfWork.CommitAsync();
         int productId = itemProduct.Id;
+
+        await _publisher.Publish(new DomainEvent.ProductChangedEvent(createdBy, productId));
 
         var product = await _productService.GetProductById(productId);
 
