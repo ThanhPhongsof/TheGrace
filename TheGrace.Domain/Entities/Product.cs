@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Xml.Linq;
 using TheGrace.Domain.Entities.EntityBase;
 using TheGrace.Domain.Enumerations;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace TheGrace.Domain.Entities;
 
@@ -34,6 +33,8 @@ public class Product : EntityAudit<int>
     public int Quantity { get; private set; }
 
     public virtual ProductCategory ProductCategory { get; private set; }
+
+    public virtual ICollection<OrderDetail> OrderDetails { get; private set; }
 
     public Product() { }
 
