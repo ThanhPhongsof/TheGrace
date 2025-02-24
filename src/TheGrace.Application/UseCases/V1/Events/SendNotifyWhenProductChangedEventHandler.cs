@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using TheGrace.Contract.Abstractions;
-using TheGrace.Infrastructure.Hubs;
+using TheGrace.Contract.Hubs;
 using TheGrace.Contract.Services.Product;
 
 namespace TheGrace.Application.UseCases.V1.Events;

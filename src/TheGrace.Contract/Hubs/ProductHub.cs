@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 
-namespace TheGrace.Infrastructure.Hubs;
+namespace TheGrace.Contract.Hubs;
 
 public class ProductHub : Hub
 {
