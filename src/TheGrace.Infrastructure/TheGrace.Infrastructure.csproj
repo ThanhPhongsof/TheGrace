@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TheGrace.Contract\TheGrace.Contract.csproj" />
+    <ProjectReference Include="..\TheGrace.Persistence\TheGrace.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
