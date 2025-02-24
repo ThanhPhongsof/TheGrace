@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Infrastructure.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Persistence.Tests", "test\TheGrace.Persistence.Tests\TheGrace.Persistence.Tests.csproj", "{CBFF2084-4061-45FA-A46A-0A60E0FC1924}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGrace.Architecture.Tests", "src\TheGrace.Architecture.Tests\TheGrace.Architecture.Tests.csproj", "{C235F5B9-9B2D-43DF-B703-19FDCDC23C8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{CBFF2084-4061-45FA-A46A-0A60E0FC1924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBFF2084-4061-45FA-A46A-0A60E0FC1924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBFF2084-4061-45FA-A46A-0A60E0FC1924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C235F5B9-9B2D-43DF-B703-19FDCDC23C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C235F5B9-9B2D-43DF-B703-19FDCDC23C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C235F5B9-9B2D-43DF-B703-19FDCDC23C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C235F5B9-9B2D-43DF-B703-19FDCDC23C8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,5 +102,6 @@ Global
 		{A501D040-4592-418F-B20B-96BF1EB92503} = {C9699B8B-FE07-47FE-BF39-FBA41721DE3C}
 		{00BC6524-541A-4F96-8D4A-A2B42570862E} = {C9699B8B-FE07-47FE-BF39-FBA41721DE3C}
 		{CBFF2084-4061-45FA-A46A-0A60E0FC1924} = {C9699B8B-FE07-47FE-BF39-FBA41721DE3C}
+		{C235F5B9-9B2D-43DF-B703-19FDCDC23C8F} = {C9699B8B-FE07-47FE-BF39-FBA41721DE3C}
 	EndGlobalSection
 EndGlobal

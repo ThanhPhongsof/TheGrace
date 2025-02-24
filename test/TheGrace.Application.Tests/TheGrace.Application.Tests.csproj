@@ -20,6 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\TheGrace.Application\TheGrace.Application.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Contract\TheGrace.Contract.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Domain\TheGrace.Domain.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Persistence\TheGrace.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
