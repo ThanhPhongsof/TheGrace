@@ -12,6 +12,8 @@
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+	<PackageReference Include="FluentAssertions" Version="6.12.0" />
+	<PackageReference Include="NetArchTest.Rules" Version="1.3.2" />	  
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2">
       <PrivateAssets>all</PrivateAssets>
@@ -20,8 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TheGrace.Domain\TheGrace.Domain.csproj" />
-    <ProjectReference Include="..\..\src\TheGrace.Persistence\TheGrace.Persistence.csproj" />
+    <ProjectReference Include="..\TheGrace.API\TheGrace.API.csproj" />
+    <ProjectReference Include="..\TheGrace.Application\TheGrace.Application.csproj" />
+    <ProjectReference Include="..\TheGrace.Contract\TheGrace.Contract.csproj" />
+    <ProjectReference Include="..\TheGrace.Domain\TheGrace.Domain.csproj" />
+    <ProjectReference Include="..\TheGrace.Infrastructure\TheGrace.Infrastructure.csproj" />
+    <ProjectReference Include="..\TheGrace.Persistence\TheGrace.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
