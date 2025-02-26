@@ -22,12 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TheGrace.API\TheGrace.API.csproj" />
-    <ProjectReference Include="..\TheGrace.Application\TheGrace.Application.csproj" />
-    <ProjectReference Include="..\TheGrace.Contract\TheGrace.Contract.csproj" />
-    <ProjectReference Include="..\TheGrace.Domain\TheGrace.Domain.csproj" />
-    <ProjectReference Include="..\TheGrace.Infrastructure\TheGrace.Infrastructure.csproj" />
-    <ProjectReference Include="..\TheGrace.Persistence\TheGrace.Persistence.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.API\TheGrace.API.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Application\TheGrace.Application.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Contract\TheGrace.Contract.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Domain\TheGrace.Domain.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Infrastructure\TheGrace.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\TheGrace.Persistence\TheGrace.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
